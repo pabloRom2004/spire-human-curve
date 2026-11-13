@@ -1,0 +1,644 @@
+{
+  "tracker": {
+    "source": "https://sts-stats.otonokizaka.moe",
+    "collected_at": "2026-11-13T16:06:49.848156+00:00",
+    "account_policy": "One website-default (latest-run) profile per public account; complete available history, not all profiles merged.",
+    "start_date": "2017-01-01",
+    "end_date": "2026-11-14",
+    "date_note": "Upper bound is the next midnight after the collection date.",
+    "discovered_accounts": 76,
+    "collected_accounts": 75,
+    "searches": [
+      {
+        "prefix": "a",
+        "results": 4
+      },
+      {
+        "prefix": "b",
+        "results": 5
+      },
+      {
+        "prefix": "c",
+        "results": 8
+      },
+      {
+        "prefix": "d",
+        "results": 3
+      },
+      {
+        "prefix": "e",
+        "results": 1
+      },
+      {
+        "prefix": "f",
+        "results": 2
+      },
+      {
+        "prefix": "g",
+        "results": 0
+      },
+      {
+        "prefix": "h",
+        "results": 3
+      },
+      {
+        "prefix": "i",
+        "results": 4
+      },
+      {
+        "prefix": "j",
+        "results": 3
+      },
+      {
+        "prefix": "k",
+        "results": 2
+      },
+      {
+        "prefix": "l",
+        "results": 3
+      },
+      {
+        "prefix": "m",
+        "results": 3
+      },
+      {
+        "prefix": "n",
+        "results": 5
+      },
+      {
+        "prefix": "o",
+        "results": 2
+      },
+      {
+        "prefix": "p",
+        "results": 7
+      },
+      {
+        "prefix": "q",
+        "results": 0
+      },
+      {
+        "prefix": "r",
+        "results": 3
+      },
+      {
+        "prefix": "s",
+        "results": 6
+      },
+      {
+        "prefix": "t",
+        "results": 6
+      },
+      {
+        "prefix": "u",
+        "results": 1
+      },
+      {
+        "prefix": "v",
+        "results": 2
+      },
+      {
+        "prefix": "w",
+        "results": 1
+      },
+      {
+        "prefix": "x",
+        "results": 1
+      },
+      {
+        "prefix": "y",
+        "results": 0
+      },
+      {
+        "prefix": "z",
+        "results": 0
+      },
+      {
+        "prefix": "0",
+        "results": 1
+      },
+      {
+        "prefix": "1",
+        "results": 0
+      },
+      {
+        "prefix": "2",
+        "results": 0
+      },
+      {
+        "prefix": "3",
+        "results": 0
+      },
+      {
+        "prefix": "4",
+        "results": 0
+      },
+      {
+        "prefix": "5",
+        "results": 0
+      },
+      {
+        "prefix": "6",
+        "results": 0
+      },
+      {
+        "prefix": "7",
+        "results": 0
+      },
+      {
+        "prefix": "8",
+        "results": 0
+      },
+      {
+        "prefix": "9",
+        "results": 0
+      },
+      {
+        "prefix": "_",
+        "results": 0
+      }
+    ],
+    "failures": [
+      {
+        "account": "unfunf",
+        "error": "404 Client Error: Not Found for url: https://sts-stats.otonokizaka.moe/app/players/unfunf"
+      }
+    ],
+    "limitations": [
+      "Self-selected public uploads, not independently validated.",
+      "Latest profile only; other profiles and inaccessible records are not coded as losses.",
+      "Human character mix and game build versions are not matched to the model benchmark.",
+      "Per-character counts are unavailable in this extract; no equal-character player distribution.",
+      "No public seed-level export is provided by this summary route."
+    ]
+  },
+  "archive": {
+    "repository": "https://github.com/MaT1g3R/Slay-the-Spire-data",
+    "commit": "097aaf3564c2247835162d267cbc7c55d2c9039e",
+    "retrieved_at_utc": "2026-11-13T16:01:11.431630+00:00",
+    "archive_bytes": 8499328,
+    "archive_sha256": "d441377013cef4b7219b3effe59553a9f9ad92378c94c661397796265faf38b5",
+    "raw_file_count": 749,
+    "unique_runs": 565,
+    "verified_git_blobs": 749,
+    "duplicate_file_count": 184,
+    "duplicate_description": "184 Chegs files appear in both all/ and character folders; byte SHA256 and play_id agree",
+    "cross_sample_overlaps": 0,
+    "unique_seed_strings": 565,
+    "repeated_character_seed_groups": 0,
+    "runs": 565,
+    "wins": 292,
+    "win_rate": 0.5168141592920354,
+    "heart_fights": 329,
+    "samples": [
+      {
+        "id": "200-rotating-sample",
+        "label": "200-run rotating sample",
+        "player_label": "",
+        "player_attribution": "Sample label only; no raw player identifier",
+        "runs": 200,
+        "wins": 99,
+        "win_rate": 0.495,
+        "heart_fights": 109,
+        "eligible_runs": 200,
+        "first_played_at_utc": "2022-09-19T23:40:52+00:00",
+        "last_played_at_utc": "2022-12-25T22:02:09+00:00",
+        "game_versions": {
+          "2022-03-07": 30,
+          "2022-10-04": 105,
+          "2022-12-01": 50,
+          "2022-12-18": 15
+        },
+        "by_character": {
+          "DEFECT": {
+            "runs": 50,
+            "wins": 22
+          },
+          "IRONCLAD": {
+            "runs": 50,
+            "wins": 29
+          },
+          "SILENT": {
+            "runs": 50,
+            "wins": 20
+          },
+          "WATCHER": {
+            "runs": 50,
+            "wins": 28
+          }
+        },
+        "source_url": "https://github.com/MaT1g3R/Slay-the-Spire-data/tree/097aaf3564c2247835162d267cbc7c55d2c9039e/runs/200-rotating-sample",
+        "selection_note": "Selected streamer sample; not a representative player cohort"
+      },
+      {
+        "id": "bad-silent",
+        "label": "50 games of Bad Silent",
+        "player_label": "",
+        "player_attribution": "Sample label only; no raw player identifier",
+        "runs": 50,
+        "wins": 27,
+        "win_rate": 0.54,
+        "heart_fights": 31,
+        "eligible_runs": 50,
+        "first_played_at_utc": "2023-01-19T22:47:12+00:00",
+        "last_played_at_utc": "2023-03-17T02:14:18+00:00",
+        "game_versions": {
+          "2022-12-18": 50
+        },
+        "by_character": {
+          "SILENT": {
+            "runs": 50,
+            "wins": 27
+          }
+        },
+        "source_url": "https://github.com/MaT1g3R/Slay-the-Spire-data/tree/097aaf3564c2247835162d267cbc7c55d2c9039e/runs/bad-silent",
+        "selection_note": "Selected streamer sample; not a representative player cohort"
+      },
+      {
+        "id": "chegs",
+        "label": "Chegs rotating sample",
+        "player_label": "chegs",
+        "player_attribution": "Repository folder label; identity not independently verified",
+        "runs": 184,
+        "wins": 91,
+        "win_rate": 0.4945652173913043,
+        "heart_fights": 105,
+        "eligible_runs": 184,
+        "first_played_at_utc": "2024-02-04T01:10:21+00:00",
+        "last_played_at_utc": "2024-03-01T02:37:38+00:00",
+        "game_versions": {
+          "2022-12-18": 184
+        },
+        "by_character": {
+          "DEFECT": {
+            "runs": 46,
+            "wins": 25
+          },
+          "IRONCLAD": {
+            "runs": 46,
+            "wins": 21
+          },
+          "SILENT": {
+            "runs": 46,
+            "wins": 21
+          },
+          "WATCHER": {
+            "runs": 46,
+            "wins": 24
+          }
+        },
+        "source_url": "https://github.com/MaT1g3R/Slay-the-Spire-data/tree/097aaf3564c2247835162d267cbc7c55d2c9039e/runs/chegs",
+        "selection_note": "Selected streamer sample; not a representative player cohort"
+      },
+      {
+        "id": "lose-all-gold-max-hp-sample",
+        "label": "Lose all gold for max HP sample",
+        "player_label": "",
+        "player_attribution": "Sample label only; no raw player identifier",
+        "runs": 30,
+        "wins": 12,
+        "win_rate": 0.4,
+        "heart_fights": 15,
+        "eligible_runs": 30,
+        "first_played_at_utc": "2023-01-02T00:17:14+00:00",
+        "last_played_at_utc": "2023-01-16T21:52:06+00:00",
+        "game_versions": {
+          "2022-12-18": 30
+        },
+        "by_character": {
+          "DEFECT": {
+            "runs": 10,
+            "wins": 2
+          },
+          "IRONCLAD": {
+            "runs": 10,
+            "wins": 4
+          },
+          "SILENT": {
+            "runs": 10,
+            "wins": 6
+          }
+        },
+        "source_url": "https://github.com/MaT1g3R/Slay-the-Spire-data/tree/097aaf3564c2247835162d267cbc7c55d2c9039e/runs/lose-all-gold-max-hp-sample",
+        "selection_note": "Selected streamer sample; not a representative player cohort"
+      },
+      {
+        "id": "panacea-ironclad-sample",
+        "label": "Panacea108 Ironclad sample",
+        "player_label": "panacea108",
+        "player_attribution": "Explicit root README attribution",
+        "runs": 51,
+        "wins": 33,
+        "win_rate": 0.6470588235294118,
+        "heart_fights": 36,
+        "eligible_runs": 51,
+        "first_played_at_utc": "2022-09-12T21:45:50+00:00",
+        "last_played_at_utc": "2022-11-12T00:56:55+00:00",
+        "game_versions": {
+          "2022-03-07": 19,
+          "2022-10-04": 32
+        },
+        "by_character": {
+          "IRONCLAD": {
+            "runs": 51,
+            "wins": 33
+          }
+        },
+        "source_url": "https://github.com/MaT1g3R/Slay-the-Spire-data/tree/097aaf3564c2247835162d267cbc7c55d2c9039e/runs/panacea-ironclad-sample",
+        "selection_note": "Selected streamer sample; not a representative player cohort"
+      },
+      {
+        "id": "robit",
+        "label": "Robit Defect sample",
+        "player_label": "Robit",
+        "player_attribution": "Explicit root README attribution",
+        "runs": 50,
+        "wins": 30,
+        "win_rate": 0.6,
+        "heart_fights": 33,
+        "eligible_runs": 50,
+        "first_played_at_utc": "2023-03-15T03:03:07+00:00",
+        "last_played_at_utc": "2023-05-26T02:30:26+00:00",
+        "game_versions": {
+          "2022-12-18": 50
+        },
+        "by_character": {
+          "DEFECT": {
+            "runs": 50,
+            "wins": 30
+          }
+        },
+        "source_url": "https://github.com/MaT1g3R/Slay-the-Spire-data/tree/097aaf3564c2247835162d267cbc7c55d2c9039e/runs/robit",
+        "selection_note": "Selected streamer sample; not a representative player cohort"
+      }
+    ],
+    "limitations": [
+      "Selected samples, only a few streamer identities, not a player population distribution",
+      "No raw player/account identifiers; sample attribution is incomplete",
+      "No abandonment field; missing abandoned attempts cannot be reconstructed",
+      "Build dates span 2022-03-07 to 2022-12-18; recorded runs span 2022 to 2024",
+      "No complete enabled-mod list; not independently verified to match Epoch's game/mod configuration",
+      "No assurance these selected sets contain every consecutive attempted run",
+      "The 30-run lose-gold/max-HP sample intentionally selects a specific Neow bonus/cost",
+      "Ordinary run-history JSON is not an action-by-action replay"
+    ],
+    "outcome_definition": "A20 non-seeded/non-trial/non-daily/non-endless; Heart win requires victory=true AND a The Heart damage_taken entry"
+  },
+  "spirepilot": {
+    "source": "https://spirepilot.com/",
+    "collected_at": "2026-11-13T16:03:11.208857+00:00",
+    "scope": "Ironclad A20 public summaries and Heart fight reviews; not an all-character player distribution.",
+    "profiles": [
+      {
+        "name": "elf",
+        "stats": {
+          "runs": 4,
+          "wins": 3,
+          "win_rate": 0.75,
+          "heart_fights": 3,
+          "heart_wins": 3
+        },
+        "heart_fights": [
+          {
+            "fight_id": "314b4074-bdc6-4461-9b37-9c6ace79ff8f-f56",
+            "won": true,
+            "hp_start": 123,
+            "hp_end": 96,
+            "max_hp_start": 123,
+            "max_hp_end": 127,
+            "end_ts": 1794079690,
+            "status": "queued",
+            "reason": "ok"
+          },
+          {
+            "fight_id": "b90bac66-fdb6-4e10-87bf-28ac36772f0d-f56",
+            "won": true,
+            "hp_start": 72,
+            "hp_end": 35,
+            "max_hp_start": 112,
+            "max_hp_end": 112,
+            "end_ts": 1793991106,
+            "status": "done",
+            "reason": "ok"
+          },
+          {
+            "fight_id": "7e36eac2-58a7-4652-a484-1a2eb17025f7-f56",
+            "won": true,
+            "hp_start": 65,
+            "hp_end": 65,
+            "max_hp_start": 65,
+            "max_hp_end": 65,
+            "end_ts": 1793726796,
+            "status": "done",
+            "reason": "ok"
+          }
+        ],
+        "other_runs": [
+          {
+            "character": "IRONCLAD",
+            "ascension": 20,
+            "floor_reached": 51,
+            "victory": false,
+            "end_ts": 1793543434,
+            "reason": "died_before_heart"
+          }
+        ]
+      },
+      {
+        "name": "Panacea",
+        "stats": {
+          "runs": 5,
+          "wins": 3,
+          "win_rate": 0.6,
+          "heart_fights": 3,
+          "heart_wins": 3
+        },
+        "heart_fights": [
+          {
+            "fight_id": "c48a5518-4ce2-4a58-b47b-4a68059726e3-f56",
+            "won": true,
+            "hp_start": 96,
+            "hp_end": 51,
+            "max_hp_start": 96,
+            "max_hp_end": 96,
+            "end_ts": 1791153011,
+            "status": "done",
+            "reason": "ok"
+          },
+          {
+            "fight_id": "63308cda-e309-4bcf-819e-37a6ab2c16a7-f56",
+            "won": true,
+            "hp_start": 53,
+            "hp_end": 44,
+            "max_hp_start": 82,
+            "max_hp_end": 82,
+            "end_ts": 1791146742,
+            "status": "done",
+            "reason": "ok"
+          },
+          {
+            "fight_id": "f7b799f9-ebd6-4c65-a9ee-a89c09632594-f56",
+            "won": true,
+            "hp_start": 71,
+            "hp_end": 61,
+            "max_hp_start": 71,
+            "max_hp_end": 71,
+            "end_ts": 1791061460,
+            "status": "done",
+            "reason": "ok"
+          }
+        ],
+        "other_runs": [
+          {
+            "character": "IRONCLAD",
+            "ascension": 20,
+            "floor_reached": 8,
+            "victory": false,
+            "end_ts": 1791148169,
+            "reason": "died_before_heart"
+          },
+          {
+            "character": "IRONCLAD",
+            "ascension": 20,
+            "floor_reached": 5,
+            "victory": false,
+            "end_ts": 1791139205,
+            "reason": "died_before_heart"
+          }
+        ]
+      },
+      {
+        "name": "Panacea108",
+        "stats": {
+          "runs": 3,
+          "wins": 1,
+          "win_rate": 0.3333333333333333,
+          "heart_fights": 1,
+          "heart_wins": 1
+        },
+        "heart_fights": [
+          {
+            "fight_id": "b7890164-2a2c-48e3-af0b-3855a29aba1e-f56",
+            "won": true,
+            "hp_start": 77,
+            "hp_end": 80,
+            "max_hp_start": 80,
+            "max_hp_end": 80,
+            "end_ts": 1793495284,
+            "status": "done",
+            "reason": "ok"
+          }
+        ],
+        "other_runs": [
+          {
+            "character": "IRONCLAD",
+            "ascension": 20,
+            "floor_reached": 33,
+            "victory": false,
+            "end_ts": 1794080345,
+            "reason": "died_before_heart"
+          },
+          {
+            "character": "IRONCLAD",
+            "ascension": 20,
+            "floor_reached": 33,
+            "victory": false,
+            "end_ts": 1793499948,
+            "reason": "died_before_heart"
+          }
+        ]
+      }
+    ],
+    "records": 12,
+    "wins": 7,
+    "heart_fights": 7
+  },
+  "model_results": [
+    {
+      "Model": "Claude Fable 5.2",
+      "task": "SpireClimb (Slay the Spire 1, Ascension 20 Heart)",
+      "id_runs": "steambench-sts1-a20h-a52f0d1907ea187b",
+      "mean_score": "0.21666666666666667",
+      "stderr": "0.05363439040648223",
+      "started_at": "2026-11-06T15:26:00.818Z",
+      "task version": "0.3.3_cd56aef"
+    },
+    {
+      "Model": "GPT-6 Sol",
+      "task": "SpireClimb (Slay the Spire 1, Ascension 20 Heart)",
+      "id_runs": "steambench-sts1-a20h-831fe00153e0f0b1",
+      "mean_score": "0.05",
+      "stderr": "0.028374015326751195",
+      "started_at": "2026-11-05T15:14:53.647Z",
+      "task version": "0.3.3_cd56aef"
+    },
+    {
+      "Model": "Claude Fable 5.1",
+      "task": "SpireClimb (Slay the Spire 1, Ascension 20 Heart)",
+      "id_runs": "steambench-sts1-a20h-2057a494867d184c",
+      "mean_score": "0.0",
+      "stderr": "0.0",
+      "started_at": "2026-11-05T15:14:53.017Z",
+      "task version": "0.3.3_cd56aef"
+    },
+    {
+      "Model": "Claude Sonnet 5.5",
+      "task": "SpireClimb (Slay the Spire 1, Ascension 20 Heart)",
+      "id_runs": "steambench-sts1-a20h-e8f930bf4d4f1a14",
+      "mean_score": "0.0",
+      "stderr": "0.0",
+      "started_at": "2026-11-05T15:14:37.615Z",
+      "task version": "0.3.3_cd56aef"
+    },
+    {
+      "Model": "GPT-6 Luna",
+      "task": "SpireClimb (Slay the Spire 1, Ascension 20 Heart)",
+      "id_runs": "steambench-sts1-a20h-f7325d71b8b16f57",
+      "mean_score": "0.0",
+      "stderr": "0.0",
+      "started_at": "2026-11-05T15:14:35.795Z",
+      "task version": "0.3.3_cd56aef"
+    },
+    {
+      "Model": "Claude Opus 5.5",
+      "task": "SpireClimb (Slay the Spire 1, Ascension 20 Heart)",
+      "id_runs": "steambench-sts1-a20h-789f946c67a789f5",
+      "mean_score": "0.05",
+      "stderr": "0.028374015326751195",
+      "started_at": "2026-11-04T19:04:14.742Z",
+      "task version": "0.3.3_cd56aef"
+    },
+    {
+      "Model": "GPT-6.1 Sol",
+      "task": "SpireClimb (Slay the Spire 1, Ascension 20 Heart)",
+      "id_runs": "steambench-sts1-a20h-e795fd781f73bd66",
+      "mean_score": "0.18333333333333332",
+      "stderr": "0.05037523978531015",
+      "started_at": "2026-11-04T18:36:01.058Z",
+      "task version": "0.3.3_cd56aef"
+    },
+    {
+      "Model": "GPT-6 Astra",
+      "task": "SpireClimb (Slay the Spire 1, Ascension 20 Heart)",
+      "id_runs": "steambench-sts1-a20h-cd6cd8bb290a7ae3",
+      "mean_score": "0.3333333333333333",
+      "stderr": "0.06137164119322156",
+      "started_at": "2026-11-04T18:35:57.934Z",
+      "task version": "0.3.3_cd56aef"
+    },
+    {
+      "Model": "GPT-6.1 Terra",
+      "task": "SpireClimb (Slay the Spire 1, Ascension 20 Heart)",
+      "id_runs": "steambench-sts1-a20h-263bd0e64b156075",
+      "mean_score": "0.1",
+      "stderr": "0.039056673294247155",
+      "started_at": "2026-11-04T18:35:54.875Z",
+      "task version": "0.3.3_cd56aef"
+    }
+  ],
+  "notes": [
+    "Stats Tracker is the only source used for the StS1 account distribution.",
+    "Archive samples and SpirePilot are separate and may overlap other sources.",
+    "No blank abandonment flag is converted to false, and no failed profile query becomes a loss."
+  ]
+}

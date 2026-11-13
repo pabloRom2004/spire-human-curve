@@ -1,0 +1,220 @@
+Slay the Spire 1 and 2: public human records and Epoch model win rates
+Snapshot: Spire Codex public export manifest generated 2026-11-13 02:39:16 UTC.
+StS1 public sources collected 2026-11-13. The games are always shown separately.
+
+SLAY THE SPIRE 1 ADDITION
+
+  Sources
+    https://sts-stats.otonokizaka.moe/app/players
+    https://github.com/MaT1g3R/sts-stat-tracker
+      source revision 7d21c7a268cabc36ce1c9ce52d8d6820d400e38c
+    https://github.com/MaT1g3R/Slay-the-Spire-data
+      archive revision 097aaf3564c2247835162d267cbc7c55d2c9039e
+    https://spirepilot.com/
+    https://epoch.ai/data/benchmarks.csv
+
+  Public players / All tracked runs
+    Stats Tracker supplies the account-level distribution. Discover accounts
+    through its public player-search endpoint, using the Twitch-name alphabet
+    a-z, 0-9 and underscore. Escape underscore as a SQL LIKE literal. All 37
+    first-character queries returned fewer than the endpoint's 10-result cap;
+    76 distinct accounts were discovered. The latest website-default public
+    profile was requested per account, rather than summing potentially
+    overlapping profiles. 75 succeeded. One account, unfunf, returned 404;
+    it is excluded, not counted as a loss or a zero-win player.
+
+    Public Overview summaries were requested for all characters, StS1, dates
+    2017-01-01 through 2026-11-14, with and without abandoned runs. Retain the
+    source's A20 Heart eligibility: exclude seeded, custom, daily and endless
+    runs; wins require a victory and a Heart encounter. These uploads are
+    self-selected and unvalidated. Mod status and historical build differences
+    are not independently controlled. No matching-seed claim is made.
+
+    Include abandoned: 68,702 runs, 22,860 wins, 75 accounts (33.2741%).
+    Exclude abandoned: 66,260 runs, 22,860 wins (34.5005%).
+    All (1+ runs), 20+, 50+ and 100+ account filters are available. Reapply the
+    minimum after changing the abandoned-run definition. Each account counts
+    once in the histogram and ranks; the all-run view is run-weighted. Summary
+    endpoints do not supply seed-level records or equal-character breakdowns
+    here; those options are unavailable rather than filled with invented data.
+
+  Streamer archive (separate)
+    749 raw .run files reduce to 565 unique runs after removing 184
+    byte-identical Chegs duplicates. All are A20, nonseeded, nontrial,
+    nondaily and nonendless. There are 292 victories with a Heart damage
+    entry (51.6814%), 329 Heart encounters and 565 distinct seed strings.
+    Runs were played in 2022-2024, on recorded builds from 2022-03-07 through
+    2022-12-18. The six samples are selected streamer histories; some are
+    character- or opening-specific. Full player attribution, full mod lists
+    and abandonment flags are unavailable. Blank abandonment fields stay
+    unknown. No abandonment toggle or player percentile is offered here.
+    Normalized run data includes source file paths and seed strings.
+
+  SpirePilot (separate supplement)
+    Its public leaderboard at min_runs=1 exposes three Ironclad A20 profiles:
+    elf 3/4, Panacea 3/5 and Panacea108 1/3. These total 12 runs, seven wins,
+    and seven completed public Heart fight reviews. Their profile links are
+    displayed separately. This tiny single-character sample is excluded from
+    the all-character percentile calculations.
+
+    These three sources may overlap. Their totals are never added together.
+
+  StS1 models
+    The current official CSV's exact task is
+    "SpireClimb (Slay the Spire 1, Ascension 20 Heart)". Use the current
+    post-November-5-correction results, rather than the older October setup.
+    All nine selected models have 60 trials: Astra 20 wins, Fable 5.2 13,
+    GPT-6.1 Sol 11, GPT-6.1 Terra 6, GPT-6 Sol 3, Opus 5.5 3, Fable 5.1 0,
+    Sonnet 5.5 0, GPT-6 Luna 0. The nonzero means and standard errors imply
+    n=60; zero-win denominators follow the benchmark's 60-trial protocol.
+    Recompute Wilson 90% intervals. Human chosen character mixes and historical
+    setups differ from the benchmark. No population skill rank is identified.
+
+  Downloads
+    sts1-public-data.zip: source summaries, discovery audit, normalized archive
+    runs, public review-profile snapshot, model percentiles and provenance.
+    sts1-model-percentiles.csv / sts2-model-percentiles.csv: all viewer account
+    filters; strictly-below ranks and ties, never aggregate-run percentiles.
+    spire-viewer.zip: both-game offline HTML and its linked data downloads.
+
+SLAY THE SPIRE 2 METHODS
+
+Sources
+  https://spire-codex.com/replays
+  https://spire-codex.com/developers
+  https://spire-codex.com/api/exports/runs/manifest
+  https://epoch.ai/publications/ai-systems-are-improving-rapidly-at-slay-the-spire-and-its-sequel
+  https://epoch.ai/benchmarks/spireclimb
+  https://epoch.ai/data/benchmarks.csv
+
+Scope
+  Human player distributions use the public replay listing, joined by run hash
+  to the daily per-version bulk exports for seed IDs, solo-player checks and
+  complete final item identifiers. The human cohort is replay uploaders with
+  identified public accounts, not a census of all uploaded histories or owners.
+  The separate seed table uses the broader uploaded run corpus.
+  This is observational, self-selected upload data.
+
+  Data-quality finding: the static export has missing player_token values even
+  for known public player records. This was directly checked by matching run
+  hashes against the live run listing (see identity-crosscheck-list.json).
+  Therefore null bulk-export identifiers must NOT be assumed to mean genuinely
+  anonymous people. Only the current public replay listing's stable player_token
+  is used to attribute a run to an account. Unattributed runs remain in the seed
+  table but cannot be counted as distinct players or linked by guesses.
+
+  The matching chart uses v0.107.1, the game patch frozen by Epoch. Human seeds
+  still differ from the benchmark seeds. The broader seed/aggregate view pools all 39 valid
+  patch files in the manifest (2,768,051 exported rows before filtering). The
+  complete corpus manifest contains 2,768,599 rows; 548 rows without a valid
+  published patch file are outside this pooled dataset. Each downloaded patch
+  is checked against the manifest's compressed-file SHA256 and line count.
+  Only records present in both the raw snapshot and collected public replay
+  listing enter a human comparison. Listing collection is paginated while the
+  site is live; overlapping hashes are deduplicated and submissions after its
+  start cutoff are excluded. Deletions or visibility changes during collection
+  can still affect coverage; this is a collected snapshot, not an immutable
+  server-side census. Keep replay-collection-state.json for timing and counts.
+
+Eligibility
+  Solo = exactly one player in the raw players list.
+  Standard mode, Ascension 10, no custom modifiers, one of the five characters
+  evaluated by Epoch: Ironclad, Silent, Defect, Necrobinder, Regent.
+  Exclude obvious mod namespaces in final deck, relic or potion identifiers
+  (hyphens or a nonstandard identifier structure). This catches visible modded
+  items but cannot verify that every other gameplay mod was disabled. The raw
+  export has no full enabled-mod list. Hidden/deleted records are excluded by
+  the publisher's exporter. No independent anti-cheat verification is claimed.
+  Unique exported run hashes are counted once per patch. Abandoned records stay
+  in the primary denominator; the publisher's win flag determines the outcome.
+  One A10 source row has both win and abandoned flags set; this is retained
+  as reported, and disappears when excluding abandoned runs.
+
+Player distribution and ranking
+  Original static analysis: accounts with at least 20 eligible identified A10
+  runs. The interactive viewer defaults to All (1+ runs). A player's
+  recorded win rate = total eligible wins / total eligible runs. Players, rather
+  than runs, have equal weight in the histogram and percentile calculation.
+  "Players below model" is the percentage whose recorded rate is strictly below
+  the model's point estimate. Ties are reported separately in the results table.
+  A zero-win model beats no zero-win players. A tie midpoint is also exported.
+
+  These are descriptive rankings against recorded histories, not identified
+  rankings of latent human ability. A short history is noisy; strategies,
+  attention, experience and game patches change over time. Completion/upload
+  practices can be selective. Neither the completeness nor humanity of every
+  account can be independently verified. Accounts are the unit, not verified
+  unique people. Renames are handled by the stable token, separate accounts
+  cannot be merged. Missing records are never coded as losses.
+
+  The curve is a reflected Gaussian kernel smoothing (bandwidth 4 percentage
+  points) of observed player rates. It is not a fitted normal distribution or
+  an assumed population bell curve. Histogram bins have width 5 percentage
+  points. Any apparent peak or skew reflects this selected observed dataset.
+
+Sensitivity analyses in analysis-results.json
+  Minimum uploaded runs: 1, 5, 10, 20, 50, 75 and 100.
+  The viewer also offers All (1+ runs) for identified replay accounts. Its
+  separate All runs view includes all 439,515 retained solo standard A10
+  records, including unattributed runs and visible modded items. Each run
+  contributes equally to the aggregate; no player percentile is inferred.
+  It covers the original five characters and official A10, across all patches,
+  rather than combining other ascensions or multiplayer into this benchmark.
+  Equal weight to all five characters, requiring 5, 10 or 15 runs on EACH.
+  Exclude abandoned runs (can inflate rates, so not the primary definition).
+  First observed attempt per account, patch, character and seed, ordered by raw
+  run start time with run hash as a deterministic tie-breaker. This does not
+  establish that an earlier unuploaded attempt never happened.
+
+  Epoch weights its five characters equally (15 runs each). Primary human
+  records reflect each player's chosen character mix; use the balanced analyses
+  to assess this confound. Character-specialist players are absent from the
+  balanced cohort, introducing a further selection difference.
+
+Model rates and uncertainty
+  Current Epoch benchmarks.csv additionally reports GPT-6.1 Terra at 26/75
+  (34.6667%) and Fable 5.2 at 13/74 (17.5676%, partial run ID). The Fable
+  denominator is reconstructed from its published mean and standard error:
+  1 + p*(1-p)/SE^2 = 74, consistent with the unique fraction 13/74 within
+  the planned 75 trials. The unreported 75th outcome is not treated as a loss.
+  Original seven model rates are also confirmed by the current CSV.
+  The user-supplied Epoch figure reports 75 attempts per model and rounded rates.
+  The unique integer win counts consistent with those rates are 26, 22, 10, 5,
+  3, 2 and 0 respectively for GPT-6 Astra, GPT-6.1 Sol, GPT-6 Sol, Opus 5.5,
+  Fable 5.1, Sonnet 5.5 and GPT-6 Luna. These are reconstructed from the figure,
+  not separately obtained model trajectories. The exact fractions are used.
+  The chart intervals are recomputed 90% Wilson binomial intervals. They need
+  not exactly reproduce Epoch's interval procedure. Per-character rates can
+  differ, so a pooled binomial interval is an approximation. The same fixed
+  seeds across models also create dependence between model results.
+  rank_at_model_lower/upper maps those win-rate interval endpoints onto the
+  observed human distribution; it is NOT a calibrated confidence interval for
+  an all-player percentile or for latent skill ranks.
+
+Why this cannot identify a percentile among all players
+  Installing a tracking mod, uploading histories and playing A10 select for
+  engagement and probably experience. Their prevalence and their relationship
+  to skill are unknown. The complete all-owner ability distribution is missing.
+  In particular, a person who never played A10 does not have a measured A10
+  probability of zero; that counterfactual is unobserved.
+
+  Let q be the share of all players represented by an uploader-like cohort and
+  F be a model's percentile within it. Only under the additional assumption
+  that EVERY other player is below the model is its all-player percentile
+  1 - q * (1 - F). Both q and the outsider ranking are unknown. With F=90% and
+  q=1%, the formula would give the 99.9th percentile (top 0.1%), but that is an
+  illustration, not an estimate. With q=10%, it instead gives top 1%.
+  An elite reference win rate (e.g. 95%) does not specify a human percentile.
+  0.000001% is one in 100 million; the replay dataset does not establish that
+  rarity. It also cannot establish the fraction of theoretically solvable seeds.
+
+Files
+  manifest.json and extraction-audit-*.json: source coverage and checksums.
+  solo-standard-runs-v*.csv: compact run metadata, all ascensions, per patch.
+  seeds-a10-all-patches.csv.gz: A10 metadata including all available seed IDs;
+    includes unattributed records and the obvious-mod flag for filtering.
+    in_live_replay_listing marks overlap; tokens are restored for public replays.
+  players-*.csv: primary eligible account-level denominators and rates.
+  model-percentiles.csv / analysis-results.json: model ranks and sensitivities.
+  human-model-distribution-*.png / .svg: figures.
+  extract.py, download_extra.py, analyze.py: reproducible analysis pipeline.
