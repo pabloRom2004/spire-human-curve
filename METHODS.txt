@@ -32,7 +32,7 @@ SLAY THE SPIRE 1 ADDITION
 
     Include abandoned: 68,702 runs, 22,860 wins, 75 accounts (33.2741%).
     Exclude abandoned: 66,260 runs, 22,860 wins (34.5005%).
-    All (1+ runs), 20+, 50+ and 100+ account filters are available. Reapply the
+    All (1+ runs), 5+ (default), 20+, 50+ and 100+ account filters are available. Reapply the
     minimum after changing the abandoned-run definition. Each account counts
     once in the histogram and ranks; the all-run view is run-weighted. Summary
     endpoints do not supply seed-level records or equal-character breakdowns
@@ -132,7 +132,7 @@ Eligibility
 
 Player distribution and ranking
   Original static analysis: accounts with at least 20 eligible identified A10
-  runs. The interactive viewer defaults to All (1+ runs). A player's
+  runs. The interactive viewer defaults to 5+ runs per account. A player's
   recorded win rate = total eligible wins / total eligible runs. Players, rather
   than runs, have equal weight in the histogram and percentile calculation.
   "Players below model" is the percentage whose recorded rate is strictly below
