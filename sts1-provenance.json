@@ -555,11 +555,20 @@
   },
   "model_results": [
     {
+      "Model": "GPT-6.2 Astra",
+      "task": "SpireClimb (Slay the Spire 1, Ascension 20 Heart)",
+      "id_runs": "steambench-sts1-a20h-903b39e902c5fe40",
+      "mean_score": "0.3333333333333333",
+      "stderr": "0.06137164119322156",
+      "started_at": "2026-11-06T20:59:25.216Z",
+      "task version": "0.3.3_cd56aef"
+    },
+    {
       "Model": "Claude Fable 5.2",
       "task": "SpireClimb (Slay the Spire 1, Ascension 20 Heart)",
       "id_runs": "steambench-sts1-a20h-a52f0d1907ea187b",
-      "mean_score": "0.21666666666666667",
-      "stderr": "0.05363439040648223",
+      "mean_score": "0.13333333333333333",
+      "stderr": "0.044255719836307654",
       "started_at": "2026-11-06T15:26:00.818Z",
       "task version": "0.3.3_cd56aef"
     },

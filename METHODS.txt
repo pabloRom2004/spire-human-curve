@@ -1,6 +1,8 @@
 Slay the Spire 1 and 2: public human records and Epoch model win rates
 Snapshot: Spire Codex public export manifest generated 2026-11-13 02:39:16 UTC.
 StS1 public sources collected 2026-11-13. The games are always shown separately.
+Epoch model results refreshed 2026-11-17; human sources remain the 2026-11-13 snapshot.
+Selected source rows, run IDs and source checksum are in epoch-model-results.json.
 
 SLAY THE SPIRE 1 ADDITION
 
@@ -63,12 +65,15 @@ SLAY THE SPIRE 1 ADDITION
     The current official CSV's exact task is
     "SpireClimb (Slay the Spire 1, Ascension 20 Heart)". Use the current
     post-November-5-correction results, rather than the older October setup.
-    All nine selected models have 60 trials: Astra 20 wins, Fable 5.2 13,
-    GPT-6.1 Sol 11, GPT-6.1 Terra 6, GPT-6 Sol 3, Opus 5.5 3, Fable 5.1 0,
+    All ten selected models have 60 trials: GPT-6.2 Astra 20 wins,
+    GPT-6 Astra 20, GPT-6.1 Sol 11, Fable 5.2 8, GPT-6.1 Terra 6,
+    GPT-6 Sol 3, Opus 5.5 3, Fable 5.1 0,
     Sonnet 5.5 0, GPT-6 Luna 0. The nonzero means and standard errors imply
     n=60; zero-win denominators follow the benchmark's 60-trial protocol.
     Recompute Wilson 90% intervals. Human chosen character mixes and historical
     setups differ from the benchmark. No population skill rank is identified.
+    The current feed revises Fable 5.2 from the November 13 snapshot's 13/60
+    to 8/60. The viewer uses the November 17 published value.
 
   Downloads
     sts1-public-data.zip: source summaries, discovery audit, normalized archive
@@ -172,11 +177,16 @@ Sensitivity analyses in analysis-results.json
   balanced cohort, introducing a further selection difference.
 
 Model rates and uncertainty
-  Current Epoch benchmarks.csv additionally reports GPT-6.1 Terra at 26/75
-  (34.6667%) and Fable 5.2 at 13/74 (17.5676%, partial run ID). The Fable
-  denominator is reconstructed from its published mean and standard error:
-  1 + p*(1-p)/SE^2 = 74, consistent with the unique fraction 13/74 within
-  the planned 75 trials. The unreported 75th outcome is not treated as a loss.
+  The November 17 Epoch benchmarks.csv reports GPT-6.2 Astra at 37/75
+  (49.3333%), GPT-6.1 Terra at 26/75 (34.6667%), and Fable 5.2 at 13/75
+  (17.3333%, completed run). All displayed StS2 models now have 75 trials.
+  The November 13 snapshot contained a partial Fable 5.2 result, 13/74;
+  this is superseded by the completed published result, rather than an
+  assumption about a missing outcome. For nonzero scores the denominators
+  are cross-checked against 1 + p*(1-p)/SE^2 in the current feed.
+  GPT-6.2 Sol has no published SpireClimb row in this snapshot; missing
+  results are not shown as zero. Both new GPT-6.2 Astra rows use task version
+  0.3.3_cd56aef, matching the existing model results.
   Original seven model rates are also confirmed by the current CSV.
   The user-supplied Epoch figure reports 75 attempts per model and rounded rates.
   The unique integer win counts consistent with those rates are 26, 22, 10, 5,
