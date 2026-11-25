@@ -1,7 +1,7 @@
 Slay the Spire 1 and 2: public human records and Epoch model win rates
 Snapshot: Spire Codex public export manifest generated 2026-11-13 02:39:16 UTC.
 StS1 public sources collected 2026-11-13. The games are always shown separately.
-Epoch model results refreshed 2026-11-17; human sources remain the 2026-11-13 snapshot.
+Epoch model results refreshed 2026-11-25; human sources remain the 2026-11-13 snapshot.
 Selected source rows, run IDs and source checksum are in epoch-model-results.json.
 
 SLAY THE SPIRE 1 ADDITION
@@ -65,7 +65,8 @@ SLAY THE SPIRE 1 ADDITION
     The current official CSV's exact task is
     "SpireClimb (Slay the Spire 1, Ascension 20 Heart)". Use the current
     post-November-5-correction results, rather than the older October setup.
-    All ten selected models have 60 trials: GPT-6.2 Astra 20 wins,
+    All eleven selected models have 60 trials: Gemini 4 Neon (xhigh) 31 wins,
+    GPT-6.2 Astra 20,
     GPT-6 Astra 20, GPT-6.1 Sol 11, Fable 5.2 8, GPT-6.1 Terra 6,
     GPT-6 Sol 3, Opus 5.5 3, Fable 5.1 0,
     Sonnet 5.5 0, GPT-6 Luna 0. The nonzero means and standard errors imply
@@ -177,7 +178,9 @@ Sensitivity analyses in analysis-results.json
   balanced cohort, introducing a further selection difference.
 
 Model rates and uncertainty
-  The November 17 Epoch benchmarks.csv reports GPT-6.2 Astra at 37/75
+  The November 25 Epoch benchmarks.csv reports Gemini 4 Neon (xhigh) at
+  38/75 in StS2 (50.7%) and 31/60 in StS1 (51.7%). The same feed confirms
+  the previously displayed scores. The November 17 feed reported GPT-6.2 Astra at 37/75
   (49.3333%), GPT-6.1 Terra at 26/75 (34.6667%), and Fable 5.2 at 13/75
   (17.3333%, completed run). All displayed StS2 models now have 75 trials.
   The November 13 snapshot contained a partial Fable 5.2 result, 13/74;

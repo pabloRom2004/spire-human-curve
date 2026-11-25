@@ -1,8 +1,34 @@
 {
   "source_url": "https://epoch.ai/data/benchmarks.csv",
-  "snapshot_date": "2026-11-17",
-  "source_sha256": "20f45c939774a71afd04e754a3276a147cf5b6d902cfb4cb4073807729881664",
+  "snapshot_date": "2026-11-25",
+  "source_sha256": "48fe1951009167dec9136cb38f66fbcd220d78e4e68bcaa6629dc4d3c4161702",
   "results": [
+    {
+      "game": "sts2",
+      "name": "Gemini 4 Neon",
+      "wins": 38,
+      "trials": 75,
+      "task": "SpireClimb (Slay the Spire 2, Ascension 10)",
+      "model": "gemini-4-neon_xhigh",
+      "mean_score": "0.5066666666666667",
+      "stderr": "0.05811865258054231",
+      "id_runs": "steambench-sts2-a10-9a3c306b24777d4b",
+      "started_at": "2026-11-23T22:01:05.871Z",
+      "task version": "0.3.3_cd56aef"
+    },
+    {
+      "game": "sts1",
+      "name": "Gemini 4 Neon",
+      "wins": 31,
+      "trials": 60,
+      "task": "SpireClimb (Slay the Spire 1, Ascension 20 Heart)",
+      "model": "gemini-4-neon_xhigh",
+      "mean_score": "0.5166666666666667",
+      "stderr": "0.06505828185300302",
+      "id_runs": "steambench-sts1-a20h-397ab5111bed8238",
+      "started_at": "2026-11-23T22:00:59.036Z",
+      "task version": "0.3.3_cd56aef"
+    },
     {
       "game": "sts2",
       "name": "GPT-6.2 Astra",
